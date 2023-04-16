@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nonoka Uchida</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="shortcut icon" href="img/favcon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap" rel="stylesheet">
+</head>
+<body id = "contact">
+    <!-- header of start -->
+    <header>
+        <div class  ="logo">
+            <a href="index.html"><img src="img/logo.png" alt=""></a>
+        </div>
+        <nav>
+            <ul class = "global-nav">
+                <li><a href="index.html"><span>Home</span></a></li>
+                <li><a href="about.html"><span>About</span></a></li>
+                <li><a href="skills.html"><span>Skills</span></a></li>
+                <li><a href="works.html"><span>Works</span></a></li>
+                <li class  = "current"><a href="contact.html"><span>Contact</span></a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- wrap op start -->
+    <div id = "wrap">
+        <div class  ="content">
+            <div class  ="main-center">
+                <h1>Contact</h1>
+                <p>お気軽にお問い合わせください。</p>
+            </div>
+            <section>
+               <h2 class = "icon">Contact form</h2>
+               <div class  ="form">
+                <form action="confirm.php" method = "post">
+                    <dl>
+                        <div class = "input-area">
+                            <dt><span class = "required">お名前</span></dt>
+                            <dd><input type="text" name = "name" class = "name"></dd>
+                        </div>
+                        <div class = "input-area">
+                            <dt><span class = "required">メールアドレス</span></dt>
+                            <dd><input type="email" name = "email" class = "email"></dd>
+                        </div>
+                        <div class = "input-area">
+                            <dt>お電話番号</dt>
+                            <dd><input type="tel" name = "tel" class = "tel"></dd>
+                            <dt>お問い合わせ種別</dt>
+                        </div>
+                        <div class = "input-area">
+                            <dd>
+                                <select name = "type" class  ="type">
+                                    <option value = "お仕事のご依頼">お仕事のご依頼</option>
+                                    <option value = "テキストテキスト">テキストテキスト</option>
+                                    <option value = "その他お問合せ">その他お問合せ</option>
+                                </select>
+                            </dd>
+                        </div>
+                        <div class = "input-area">
+                            <dt>ご希望のご連絡方法</dt>
+                            <dd>
+                                <input type="radio" name = "contact" value = "Eメール">Eメール
+                                <input type="radio" name = "contact" value = "お電話">お電話
+                            </dd>
+                        </div>
+                        <div class = "input-area">
+                                <dt><span class = "required">メッセージ</span></dt>
+                                <dd><textarea name="message" class = "message"></textarea></dd>
+                        </div>
+                     </dl>
+                        
+                        <div class = "input-area">
+                            <button type = "submit" class  ="btn">送信
+                            </button>
+                         </div>
+                </form>
+                <div class = "attention">
+                    <p>※「<span class = "required"></span>」のついている項目は必須項目です。</p>
+                </div>
+               </div>
+            </section>
+            <section class  ="access clearfix">
+                <h2 class  ="icon">Access</h2>
+                <table>
+                    <tr>
+                        <th>所在地住所</th>
+                        <td>〒106-0071<br>東京都港区北青山2-12-28&nbsp;青山ビル5階</td>
+                    </tr>
+                    <tr>
+                        <th>電話番号</th>
+                        <td>03-5413-5225</td>
+                    </tr>
+                    <tr>
+                        <th>電車でのアクセス</th>
+                        <td>東京メトロ銀座線外苑前駅<br>A3出口より徒歩5分</td>
+                    </tr>
+                </table>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.2868704420757!2d139.71308331486108!3d35.66993778019688!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c9ec98a66d1%3A0xf80fdf3177655a63!2z44CSMTA3LTAwNjEg5p2x5Lqs6YO95riv5Yy65YyX6Z2S5bGx77yS5LiB55uu77yR77yS4oiS77yS77yYIFNFSVpBTiDpnZLlsbHjg5Pjg6s!5e0!3m2!1sja!2sjp!4v1680951180033!5m2!1sja!2sjp" width="460" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+    </div>
+    <!-- footer of start -->
+    <footer>
+        <small>&copy;2023 Nonoka Uchida</small>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
